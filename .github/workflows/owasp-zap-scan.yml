@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        continue-on-error: true
         with:
           ref: master
       - name: ZAP Scan
